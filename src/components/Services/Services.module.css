@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.service_container {
+    max-width: 1300px;
+    margin: 100px auto 100px auto;
+    /* box-shadow: lightgray 0px 0px 7px 3px;
+    padding: 20px; */
+    border-radius: 10px;
+    padding: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service_container>h1 {
+    font-size: 50px;
+    border: none;
+    padding-bottom: 10px;
+    font-style: normal;
+}
+
+.heighlight {
+    color: #478df3;
+}
+
+.service_container>p{
+    font-size: 20px;
+    width: 50%;
+}
+
+.main_services>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.main_services>div>div {
+    box-shadow: lightgray 0px 0px 7px 3px;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.main_services>div>div>div {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.main_services>div>div>p {
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+@media (max-width:1000px) {
+    .main_services>div {
+        grid-template-columns: 1fr;
+
+    }
+}

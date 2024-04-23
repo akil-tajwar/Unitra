@@ -1,0 +1,39 @@
+.container {
+    max-width: 1300px;
+    margin: 100px auto 100px auto;
+    background: #f8ece8;
+    border-radius: 12px;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.page_title {
+    letter-spacing: 1px;
+    color: #000;
+    margin: 1rem 0 4rem 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.page_title>span {
+    font-weight: 800;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.75rem 0.5rem;
+    place-items: center;
+    margin-top: 3rem;
+}
+
+.filter_box>span {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-left: 2rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}

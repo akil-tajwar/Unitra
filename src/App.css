@@ -1,0 +1,23 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon-hover:hover {
+    color: rgb(61, 202, 40); /* Change color on hover */
+    transform: scale(1.2); /* Scale up on hover */
+}
+.MentorProfile-height{
+    height: 744px;
+}
+.MentorProfile-feature {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: #f0f0f0; /* Background color */
+    border: 2px solid #000; /* Border color */
+    border-radius: 10px;
+  }
+  

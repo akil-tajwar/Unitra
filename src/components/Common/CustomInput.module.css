@@ -1,0 +1,32 @@
+.field {
+  margin-bottom: 1rem;
+}
+label {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin: 5px 0 10px 0;
+  height: 42px;
+  font-size: 16px;
+}
+
+.option {
+  font-family: "Roboto", sans-serif;
+  margin: 10px !important;
+  font-size: 16px;
+  padding: 50px;
+}
+.option:hover {
+  background-color: green;
+}
+.errorMessage {
+  color: red;
+}

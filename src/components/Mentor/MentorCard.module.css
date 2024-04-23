@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 320px;
+    position: relative;
+    text-align: center;
+    margin: 1rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    border-radius: 12px;
+}
+
+.upper_box {
+    height: 30%;
+    border-radius: 12px 12px 0 0;
+    border: 2px solid white;
+}
+
+.lower_box {
+    height: 70%;
+    border-radius: 0 0 12px 12px;
+    background-color: #fff;
+}
+
+.card_image {
+    border-radius: 50%;
+    width: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    border: 2px solid #fff;
+}
+
+.card_title {
+    margin-top: 5.5rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #24162b;
+}
+
+.college_name {
+    font-size: 14px;
+    line-height: 22px;
+    color: #4f4f4f;
+}
+
+.batch {
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}

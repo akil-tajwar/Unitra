@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.container {
+    max-width: 1300px;
+    margin: 100px auto 100px auto;
+    /* box-shadow: lightgray 0px 0px 7px 3px;
+    padding: 20px; */
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.anim {
+    width: 50%;
+}
+
+form {
+    box-shadow: lightgray 0px 0px 7px 3px;
+    padding: 60px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+form>h2, form>h3{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+}
+
+.countryPhone {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+.dateTime {
+    display: flex;
+    gap: 10px;
+}
+
+form>button {
+    width: 100%;
+    margin-top: 3px;
+}
+
+@media (max-width:1000px) {
+    .container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .anim {
+        width: 100%;
+    }
+}

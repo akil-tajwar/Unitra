@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.hero_container {
+  max-width: 1300px;
+  margin: 100px auto 0 auto;
+  font-family: "Inter", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vh - 120px);
+  z-index: 1;
+  justify-content: center;
+  padding: 3rem 3rem 0;
+}
+
+.hero_lg_text {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  max-width: 70%;
+  font-weight: 500;
+  color: #478df3;
+  width: 315px;
+  height: 224px;
+}
+
+.hero_sm_text {
+  margin-top: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  max-width: 65%;
+  color: #232323;
+}
+
+.hero_btn {
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(17, 125, 197);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 10px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.hero_btn_icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero_btn:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.hero_btn:hover .hero_btn_icon {
+  transform: translate(4px);
+}
+
+.hero_btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.hero_btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.right_box {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  /* .hero_container {
+    grid-template-columns: 1fr;
+  } */
+  .hero_container {
+    /* max-width: 1300px; */
+    margin: 50px auto 0 auto;
+    /* font-family: "Inter", sans-serif; */
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* height: calc(100vh - 120px); */
+    /* z-index: 1; */
+    /* justify-content: center; */
+    padding: 2rem;
+  }
+
+  .left_box {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: center;
+  }
+
+  .hero_sm_text {
+    max-width: 95%;
+    /* width: 350px; */
+  }
+
+  .hero_lg_text {
+    height: auto;
+    min-height: 230px;
+    font-size: 32px;
+    /* height: 130px; */
+  }
+}
